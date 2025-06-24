@@ -21,6 +21,9 @@ const typed = new Typed(".multiple-text", {
       if (response.ok) {
         document.getElementById("form-success").style.display = "block";
         form.reset();
+          setTimeout(() => {
+  location.reload();
+}, 3000); // 3000 = 3 segundos
       } else {
         alert("❌ Ocurrió un error al enviar. Por favor, intentá de nuevo.");
       }
