@@ -204,15 +204,16 @@
     <!--Section Contact-->
     <section class="contact" id="contact">
         <h2 class="heading">Contactame <span>Aqui!!</span></h2>
-        <form action="#">
+        <form action="https://formsubmit.co/floreshernanariel@gmail.com" method="POST">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
   <div class="input-box">
-    <input type="text" placeholder="Nombre Completo:" />
-    <input type="email" placeholder="Escribe tu Email:" />
-    <textarea placeholder="Tu mensaje..."></textarea>
+    <input type="text" name="name" placeholder="Nombre Completo:" required />
+    <input type="email" name="email" placeholder="Escribe tu Email:" required />
+    <textarea name="message" placeholder="Tu mensaje..." required></textarea>
     <input type="submit" value="Enviar Mensaje" class="btn" />
   </div>
 </form>
-
     </section>
   <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
