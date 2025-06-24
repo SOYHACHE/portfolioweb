@@ -5,9 +5,7 @@ const typed = new Typed(".multiple-text", {
     backDelay: 1500,
     loop: true
   });
-
-  // Captura el envío del formulario y evita que se recargue
-  document.querySelector("form").addEventListener("submit", function (e) {
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
     e.preventDefault();
     const form = e.target;
 
@@ -21,13 +19,14 @@ const typed = new Typed(".multiple-text", {
       if (response.ok) {
         document.getElementById("form-success").style.display = "block";
         form.reset();
-          setTimeout(() => {
-  location.reload();
-}, 3000); // 3000 = 3 segundos
+
+        setTimeout(() => {
+          location.reload();
+        }, 3000); // recarga tras 3 segundos
       } else {
-        alert("❌ Ocurrió un error al enviar. Por favor, intentá de nuevo.");
+        alert("❌ Ocurrió un error al enviar. Probá de nuevo.");
       }
-    }).catch(error => {
-      alert("❌ Error de red. Revisá tu conexión o probá más tarde.");
+    }).catch(() => {
+      alert("❌ Error de red.");
     });
   });
