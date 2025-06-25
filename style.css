@@ -304,8 +304,8 @@ span {
 .portfolio-box img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: top;
+  object-fit: cover;         /* llena el contenedor, recortando si hace falta */
+  object-position: top;      /* alinea desde arriba en lugar de centrar */
   transition: .5s ease;
 }
 
