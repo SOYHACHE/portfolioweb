@@ -49,7 +49,6 @@ ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
 /*=========================== TypedJS ===========================*/
-document.addEventListener("DOMContentLoaded", function() {
     const TypedJS = new Typed('.multiple-text', {
         strings: ['Backend Developer', 'JavaScript Developer', 'SQL', 'Machine Learning'],
         typeSpeed: 100,
@@ -57,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function() {
         backDelay: 1000,
         loop: true
     });
-});
+
   // Formulario contacto
 //  const form = document.getElementById('contact-form');
  // const successMessage = document.getElementById('form-success');
