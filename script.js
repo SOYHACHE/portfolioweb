@@ -51,9 +51,9 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 /*=========================== TypedJS ===========================*/
 const TypedJS = new Typed('.multiple-text', {
     strings: ['Backend Developer', 'JavaScript Developer', 'SQL', 'Marchine Learning'],
-    typeSpeed: 100,
-    backSpeed: 100,
-    backDelay: 1000,
+    typeSpeed: 80,
+    backSpeed: 60,
+    backDelay: 60,
     loop: true
 });
 
